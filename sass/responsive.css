@@ -1,0 +1,158 @@
+@media screen and (max-width: 1279px) {
+  html {
+    font-size: 85%;
+  }
+  header {
+    padding: 0 20px;
+  }
+  header nav .navigations ul {
+    gap: 40px;
+  }
+  .main-cont {
+    overflow-x: hidden;
+  }
+  .main-cont main {
+    max-width: 950px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .main-cont main .banner-image {
+    max-width: 325px;
+  }
+  .main-cont main .banner-image .doctor {
+    width: 100%;
+  }
+  .services-box {
+    padding: 0 20px;
+  }
+  .services-box .service {
+    margin: auto;
+  }
+  .about-text {
+    margin: auto;
+  }
+  .about-img {
+    margin: auto;
+  }
+  .our-doctors-section .slide-wrapper {
+    justify-content: center;
+  }
+  .our-doctors-section .doctors-cont {
+    max-width: 855px;
+    margin: 0;
+    margin-top: 40px;
+  }
+  .subscribe-section {
+    padding: 0 20px;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  footer {
+    padding: 0 20px;
+  }
+  .footer-bottom {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 934px) {
+  html {
+    font-size: 80%;
+  }
+  nav #burger-menu {
+    display: block;
+    font-size: 2rem;
+  }
+  nav .navigations {
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    left: 50%;
+    width: 90vw;
+    transform: translateX(-50%);
+    height: 0;
+    overflow: hidden;
+  }
+  nav .navigations ul {
+    gap: 40px;
+    flex-direction: column;
+    margin: 30px 0;
+  }
+  nav .navigations.active {
+    height: 430px;
+  }
+  main {
+    padding-top: 80px;
+  }
+  .slide-wrapper .doctors-cont {
+    max-width: 660px;
+  }
+  .slide-wrapper .slide1 img {
+    width: 220px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 75%;
+  }
+  .main-cont main {
+    padding: 80px 20px 0 20px;
+    row-gap: 50px;
+  }
+  .main-cont main .banner-image > h3 {
+    top: 64px;
+    left: 0;
+  }
+  .achivement-bar {
+    flex-wrap: wrap;
+    row-gap: 20px;
+    max-width: 500px;
+    padding: 20px 0;
+  }
+  .achivement-bar .achivement {
+    max-width: 200px;
+    border: none;
+  }
+  .slide-wrapper .doctors-cont {
+    max-width: 282px;
+  }
+  .slide-wrapper .doctors-cont .slide1 img {
+    width: auto;
+  }
+  footer .footer-cont .footer-menu-box {
+    flex-wrap: wrap;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+    row-gap: 50px;
+    -moz-column-gap: 25px;
+         column-gap: 25px;
+  }
+  footer .footer-cont .footer-menu-box .about-us-footer {
+    margin: auto;
+  }
+  footer .footer-cont .footer-menu-box .media-footer {
+    margin: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 70%;
+  }
+  .achivement-bar {
+    max-width: 380px;
+  }
+  .about-us-sec {
+    padding: 62px 20px;
+  }
+  main {
+    padding: 80px 20px 0 20px;
+  }
+  .footer-bottom {
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+  .footer-bottom p {
+    margin: auto;
+  }
+}/*# sourceMappingURL=responsive.css.map */

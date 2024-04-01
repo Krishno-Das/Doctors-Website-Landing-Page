@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    transition: 0.4s all ease;
+
+}
+
+nav {
+    max-width: 1185px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 110px;
+    position: relative;
+
+    #burger-menu {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        display: none;
+        transform: translateY(-50%);
+
+        .burger {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transition: none;
+            transform: translateY(-50%);
+
+        }
+
+        .cross {
+            visibility: hidden;
+            transition: none;
+        }
+
+        .cross.active {
+            visibility: visible;
+        }
+
+        .burger.active {
+            visibility: hidden;
+        }
+
+    }
+
+    .logo {
+        color: #03045e;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    .navigations {
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 56px;
+            list-style: none;
+            font-size: 1.25rem;
+
+            li {
+                a {
+                    color: #000;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        ul li:last-child {
+            background-color: #03045e;
+            border-radius: 6px;
+            padding: 5px 15px;
+
+            a {
+                color: #fff;
+                font-size: 1.4375rem;
+            }
+        }
+    }
+}
+
+
+.main-cont {
+    background-image: url("../images/bg-gradient.jpg");
+    min-height: 653px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    main {
+        max-width: 1185px;
+        min-height: 656px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .banner-text {
+            h1 {
+                font-size: 3.9375rem;
+                color: #fff;
+                line-height: 55px;
+            }
+
+            h3 {
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: normal;
+                font-size: 1.75rem;
+            }
+
+            p {
+                color: #fff;
+                margin-top: 35px;
+                font-size: 1.25rem;
+                line-height: 25px;
+                color: #5394b6;
+                margin-bottom: 95px;
+            }
+
+            .book-apppointment-btn {
+                background-color: #48cae4;
+                text-decoration: none;
+                color: #03045e;
+                border-radius: 10px;
+                font-size: 1.5625rem;
+                padding: 22px 25px;
+                font-weight: 400;
+            }
+        }
+
+        .banner-image {
+            min-height: 656px;
+            display: flex;
+            align-items: end;
+            position: relative;
+
+            >h3 {
+                background: #fff;
+                position: absolute;
+                z-index: 2;
+                font-size: 1.6875rem;
+                font-weight: 600;
+                border-radius: 0 20px 0 20px;
+                padding: 10px 20px;
+                color: #03045e;
+                top: 165px;
+                left: -155px;
+            }
+
+            .doctor {
+                position: relative;
+                z-index: 1;
+            }
+
+            .banner-bg-shape {
+                position: absolute;
+                max-width: 392px;
+                left: 30px;
+                top: 189px;
+            }
+        }
+
+    }
+}
+
+.achivement-bar {
+    background-color: #3381e1;
+    border-radius: 15px;
+    max-width: 928px;
+    min-height: 145px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-top: -60px;
+    position: relative;
+    z-index: 1;
+
+
+    .achivement {
+        text-align: center;
+        border-right: 1px solid #00b4d8;
+        padding: 0 35px;
+
+        h2 {
+            font-size: 2.875rem;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 1.875rem;
+            color: #90e0ef;
+        }
+    }
+
+    .achivement:last-child {
+        border: none;
+    }
+
+}
+
+.heading {
+    font-size: 2.063rem;
+    color: #091a6c;
+    font-weight: normal;
+    text-align: center;
+}
+
+.sub-heading {
+    font-size: 1rem;
+    color: #4f4f4f;
+    font-weight: 200;
+    text-align: center;
+}
+
+// health services section
+
+
+.health-service-cont {
+    max-width: 1120px;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+
+    h2 {
+        font-size: 2.063rem;
+        color: #091a6c;
+        font-weight: normal;
+    }
+
+    >p {
+        font-size: 1rem;
+        color: #4f4f4f;
+        font-weight: 200;
+    }
+
+    .services-box {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 45px;
+        gap: 30px;
+        flex-wrap: wrap;
+
+        .service {
+            width: 179px;
+            height: 203px;
+            background-color: #629be1;
+            border-radius: 17px;
+            color: #fff;
+            padding: 15px 10px;
+            cursor: pointer;
+            transition: 0.3s ease;
+
+            >p {
+                font-size: 0.75rem;
+                margin-top: 8px;
+                color: #f1f1f1;
+                line-height: 14px;
+                font-weight: normal;
+            }
+
+            h3 {
+                font-size: 1.313rem;
+                margin-top: 14px;
+                font-weight: 600;
+            }
+        }
+
+        .service:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+
+// about us section
+
+.about-us-sec {
+    background-color: #fafafa;
+    padding: 62px 0;
+    margin-top: 115px;
+    margin-bottom: 70px;
+
+    .about-us-cont {
+        display: flex;
+        max-width: 1160px;
+        margin: auto;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        .about-text {
+            position: relative;
+            max-width: 534px;
+            min-height: 370px;
+
+            h2 {
+                font-size: 2.1875rem;
+                font-weight: 500;
+                line-height: 19px;
+            }
+
+            .about-sub-heading {
+                margin-top: 5px;
+                color: #3c3c3c;
+            }
+
+            p {
+                font-size: 1rem;
+                margin-top: 40px;
+                color: #0e0e0e;
+                line-height: 25px;
+                font-weight: 200;
+            }
+
+            a {
+                margin-right: auto;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                text-decoration: none;
+                border-radius: 15px;
+                border: 1px solid #72a4e1;
+                font-size: 0.75rem;
+                color: #03045e;
+                padding: 5px 10px;
+                transition: 0.3s;
+            }
+
+            a:hover {
+                background-color: #03045e;
+                color: #00b4d8;
+
+            }
+        }
+
+        .about-img {
+            >img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.our-doctors-section {
+    margin-top: 70px;
+    max-width: 1210px;
+    margin: auto;
+    position: relative;
+
+    .slide-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .doctors-cont {
+        display: flex;
+        overflow-x: scroll;
+        max-width: 1146px;
+        margin: auto;
+        margin-top: 60px;
+
+        .slide1 {
+            display: flex;
+
+            >img:hover {
+                transform: scale(1.1);
+                transition: 0.4s ease;
+            }
+        }
+    }
+
+    .doctors-cont::-webkit-scrollbar {
+        display: none;
+    }
+
+    .indicator {
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .prev {
+        transform: rotate(180deg);
+    }
+
+}
+
+
+.client-review-section {
+    margin: auto;
+    margin-top: 100px;
+    max-width: 1116px;
+    text-align: center;
+
+    button {
+        color: #03045e;
+        background-color: #cdeff6;
+        border: none;
+        padding: 10px 20px;
+        text-decoration: none;
+        text-align: center;
+        margin-top: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .client-box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin-bottom: 30px;
+        justify-content: center;
+        margin-top: 50px;
+
+        .client {
+            max-width: 344px;
+            min-height: 244px;
+            padding: 0 20px;
+            background-color: #cdeff6;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h4 {
+                font-size: 1.125rem;
+                font-weight: 600;
+                margin-top: 10px;
+            }
+
+            p {
+                font-size: 0.938rem;
+                text-align: center;
+                font-weight: 200;
+                margin-top: 25px;
+                font-weight: normal;
+                line-height: 21px;
+                color: #03045e;
+            }
+        }
+    }
+
+    .client-more {
+        display: none;
+    }
+
+    .client-more.active {
+        display: flex;
+    }
+}
+
+
+// subscribe section
+
+.subscribe-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1183px;
+    margin: auto;
+    margin-top: 150px;
+
+    .sub-text {
+        max-width: 711px;
+    }
+
+    h2 {
+        font-size: 2.188rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 24px;
+        margin-top: 30px;
+    }
+
+    #sub {
+        input {
+            background-color: #d1f6f6;
+            border: none;
+            outline: none;
+            width: 330px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        text-align: center;
+
+        button {
+            background-color: #48cae4;
+            color: #03045e;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.125rem;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+    }
+}
+
+
+
+footer {
+    background-color: #21215e;
+    color: #fff;
+    margin-top: 150px;
+
+    .footer-cont {
+        max-width: 1270px;
+        margin: auto;
+        padding-top: 70px;
+        padding-bottom: 80px;
+
+        h1 {
+            font-size: 2.800rem;
+        }
+
+        .footer-menu-box {
+            display: flex;
+            margin-top: 50px;
+            justify-content: space-between;
+
+            ul {
+                list-style: none;
+                margin-top: 30px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                color: #a7a7a7;
+            }
+        }
+
+        .media-footer {
+            >ul {
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                margin-top: 0;
+
+            }
+        }
+    }
+
+
+}
+
+.footer-bottom {
+    background-color: #34345e;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1270px;
+    margin: auto;
+    padding: 15px 0;
+    color: #bababa;
+}
+
+.footer-bottom-bg {
+    background-color: #34345e;
+}
